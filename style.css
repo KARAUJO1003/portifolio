@@ -16,14 +16,15 @@
     width: 100%;
     min-width: 600px;
     display: flex;
-    gap: 4rem;
+    justify-content: center;
+    /*gap: 4rem;*/
     flex-wrap: wrap;
 }
 
 .left-division{ 
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     max-width: 600px;
     flex-direction: column;
@@ -32,11 +33,10 @@
 }
 
 .contact{
-    max-width: 300px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 20px;
 }
 
@@ -45,6 +45,7 @@ img[src]{
     width: 300px;
 }
 .right-division{
+    min-width: 300px;
     max-width: 600px;
     width: 100%;
     display: flex;
