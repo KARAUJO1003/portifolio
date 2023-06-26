@@ -77,7 +77,6 @@ a i:hover{
 
 .home-main{
     width: 100%;
-    min-width: 600px;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -111,17 +110,24 @@ a i:hover{
 
 
 img[src]{
-    width: 450px;
+    width: 80%;
 }
 .right-division{
-    min-width: 300px;
     max-width: 600px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     text-align: start;
+    padding: 0 50px;
+}
+
+.right-division p{
+    max-width: 650px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -134,9 +140,14 @@ img[src]{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    max-width: 650px;
-    min-width: 300px;
     padding: 50px;
+}
+
+.content p{
+    max-width: 650px;
+    width: auto;
+    padding:0  50px;
+
 }
 
 .content h1{
