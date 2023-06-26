@@ -134,9 +134,9 @@ img[src]{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    min-width: 450px;
     max-width: 650px;
-    width: auto;
+    min-width: 300px;
+    padding: 50px;
 }
 
 .content h1{
