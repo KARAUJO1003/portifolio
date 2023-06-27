@@ -4,6 +4,8 @@
     --color-purple: #6C63FF;
     --color-green: #2fe08e;
     --color-dark: #111;
+    --color-orange:#fd5130;
+    --color-white:#e4e6ef;;
 }
 
 *{
@@ -15,14 +17,20 @@
 }
 
 body{
-    background-color: #111;
-    color: aliceblue;
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .cabecalho{
     display: flex;
-    padding: 1rem 5rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    min-width: 40%;
+    justify-content: space-between;
     align-items: center;
 }
 span{
@@ -38,7 +46,7 @@ span:hover{
 
 ul{
     display: flex;
-    gap: 2rem;
+    justify-content: center;
     list-style: none;  
 }
 
@@ -50,16 +58,16 @@ a{
 ul li a{
     
     color: rgb(209, 209, 209);
-    transition: .5s
+    transition: 1s;
+    padding: 0 15px;
 }
 ul li a:hover{
     
-    border-bottom: 1px solid #6C63FF;
-    color: white;
+    border-bottom: 1px solid var(--color-purple);
 }
 
 a i{
-    font-size:1.7rem ;
+    font-size:1.5rem ;
     padding: 0;
     margin: 0;
     transition: .5s;
