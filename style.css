@@ -183,7 +183,8 @@ img[src]{
 .tec{
     display: flex;
     padding: 1rem;
-    gap: .5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .tec img{
@@ -191,6 +192,11 @@ img[src]{
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.35);
     border-radius: 1rem;
     background-color: var(--color-white);
+    transition: .5s;
+}
+
+.tec img:hover{
+    transform: scale(1.1);
 }
 
 .gallery {
@@ -229,7 +235,34 @@ img[src]{
     align-items: center;
     justify-content: center;
     flex-direction: column;}
-
+/*----------------------------------------------------Seta para voltar ao topo---------------------------------------------------------------------------------------*/
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+      
+      #back-to-top span {
+        transform: rotate(-90deg);
+      }
+      
+      #back-to-top.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      
 
 
   
