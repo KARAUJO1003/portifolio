@@ -86,22 +86,21 @@ a i:hover{
 }
 
 .home-main{
-    max-width: 65%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 3rem;
 }
 
 .left-division{ 
     max-width: 35%;
-    min-width: auto;
+    min-width: 35%;
     display: flex;
     align-items: center;
-    max-width: 600px;
     flex-direction: column;
-    gap: 10px;
 
 }
 
@@ -119,24 +118,16 @@ a i:hover{
 
 
 img[src]{
-    width: 85%;
+    width: 100%;
 }
 .right-division{
-    max-width: 50%;
-    min-width: 25%;
-    width: auto;
+    max-width: 35%;
+    min-width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     text-align: start;
-}
-
-.right-division p{
-    max-width: 650px;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -189,6 +180,19 @@ img[src]{
     flex-direction: column;
 }
 
+.tec{
+    display: flex;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.tec img{
+    max-width: 5rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
+    background-color: var(--color-white);
+}
+
 .gallery {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.35);
     overflow-x: scroll;
@@ -212,8 +216,8 @@ img[src]{
   
   .card {
     display: inline-block;
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     background-color: #f0f0f0;
     margin-right: 10px;
   }
@@ -225,4 +229,7 @@ img[src]{
     align-items: center;
     justify-content: center;
     flex-direction: column;}
+
+
+
   
