@@ -25,6 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 nav{
@@ -37,7 +38,10 @@ span{
     font-size: 1.5rem;
     font-weight: 600;
     transition: .5s;
-    color: var(--color-white);    
+    color: var(--color-white); 
+    padding: 0 15px;
+    border: 1.5px solid var(--color-green);
+    border-radius: 20px;   
 }
 span:hover{
     color: var(--color-purple);
@@ -236,33 +240,36 @@ img[src]{
     justify-content: center;
     flex-direction: column;}
 /*----------------------------------------------------Seta para voltar ao topo---------------------------------------------------------------------------------------*/
-    #back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        line-height: 40px;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        transition: opacity 0.3s ease;
-      }
-      
-      #back-to-top span {
-        transform: rotate(-90deg);
-      }
-      
-      #back-to-top.hidden {
-        opacity: 0;
-        pointer-events: none;
-      }
-      
-
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  #back-to-top span {
+    display: flex;
+    transform: rotate(0deg);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    padding: .4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #back-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
 
   

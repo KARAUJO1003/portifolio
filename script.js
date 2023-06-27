@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     var backToTopButton = document.getElementById('back-to-top');
   
-    if (header.getBoundingClientRect().bottom <= 0) {
+    if (header.getBoundingClientRect().top <= 0) {
       backToTopButton.classList.remove('hidden');
     } else {
       backToTopButton.classList.add('hidden');
