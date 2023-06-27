@@ -91,6 +91,7 @@ a i:hover{
 
 .home-main{
     max-width: 80%;
+    min-width: 50%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -161,8 +162,9 @@ img[src]{
 
 }
 
-.content h1{
+h1{
     text-align: center;
+    font-size: 2rem;
     
 }
 
