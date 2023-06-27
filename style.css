@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&display=swap');
 
-:root{
-    --color-purple:#6C63FF;
+:root {
+    --color-purple: #6C63FF;
+    --color-green: #2fe08e;
+    --color-dark: #111;
 }
 
 *{
@@ -186,6 +188,20 @@ img[src]{
     white-space: nowrap;
     padding: 2rem;
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-green);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-dark);
+}
   
   .card {
     display: inline-block;
