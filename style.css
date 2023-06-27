@@ -134,6 +134,13 @@ img[src]{
     text-align: start;
 }
 
+.cv{
+    margin-top: 1rem;
+    background-color: var(--color-purple);
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+
 
 
 /*--------------------------PAGINA 02 ----------------------------------------------------------------------------*/
