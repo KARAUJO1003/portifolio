@@ -35,6 +35,30 @@ body{
     padding: 15px 0px;
 }
 
+/* Estilos para o menu responsivo */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Esconder o menu quando a largura da tela for menor ou igual a 768px */
+    .menu ul {
+        display: none;
+    }
+
+    /* Mostrar o ícone do menu */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Estilos para o menu aberto */
+    .menu.open ul {
+        display: block;
+    }
+}
+
+
 .cabecalho nav{
     display: flex;
     max-width: 45%;

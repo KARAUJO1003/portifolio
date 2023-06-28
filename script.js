@@ -14,3 +14,12 @@ window.addEventListener('scroll', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
   
+
+
+  // JavaScript para o menu responsivo
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', function () {
+    menu.classList.toggle('open');
+});
