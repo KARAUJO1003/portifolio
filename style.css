@@ -7,7 +7,7 @@
     --color-dark: #111;
     --color-orange:#fd5130;
     --color-white:#e4e6ef;;
-    --box-shadow:box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    --box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 *{
@@ -286,7 +286,7 @@ color: var(--color-purple);}
     display: inline-block;
     width: 300px;
     height: 300px;
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
     padding: 1rem;
     border-radius: 5px;
   }
@@ -294,7 +294,7 @@ color: var(--color-purple);}
     padding: 10px 15px;
     width: 100%;
     margin-top: 1rem;
-    background-color: #6C63FF;
+    background-color: var(--color-purple);
     color: var(--color-white);
     font-weight: 600;
     border: none;
@@ -309,20 +309,22 @@ background-color: var(--color-purple-medium);
 .card .card-img{
     border-radius: 5px;
     height: 80%;
-    border: 1px solid var(--color-dark);
+    box-shadow: var(--box-shadow);
     color: var(--color-dark);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-  .home-page3{
+  .page-contact{
     width: 100%;
-    height: 50vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;}
+    flex-direction: column;
+    padding: 20rem;
+text-align: center;}
 /*----------------------------------------------------Seta para voltar ao topo---------------------------------------------------------------------------------------*/
 #back-to-top {
     position: fixed;
