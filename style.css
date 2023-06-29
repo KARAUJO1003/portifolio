@@ -15,15 +15,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
+    -webkit-font-smoothing: antialiased;}
+a{
+    text-decoration: none;
+    color: var(--color-white);}
+h1{
+    text-align: center;
+    font-size: 2rem;  }
 body{
     background-color: var(--color-dark);
-    color: var(--color-white);
-}
-
-.cabecalho{
+    color: var(--color-white);}
+/*---------------------------------------Header------------------------------------------*/
+.nav-bar{
     display: flex;
     width: 100%;
     position: fixed;
@@ -33,151 +36,107 @@ body{
     box-shadow: var(--box-shadow);
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px 10px;
-}
-
-/* Estilos para o menu responsivo */
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-    /* Esconder o menu quando a largura da tela for menor ou igual a 768px */
-    .menu ul {
-        display: none;
-    }
-
-    /* Mostrar o ícone do menu */
-    .menu-icon {
-        display: block;
-    }
-
-    /* Estilos para o menu aberto */
-    .menu.open ul {
-        display: block;
-    }
-}
-
-
-.cabecalho nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    padding: 15px 10px;}
+/*----------------------------------------logo-------------------------------------------*/
 .logo span{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     transition: .5s;
     color: var(--color-white); 
     padding: 0 15px;
     border: 0.1rem solid var(--color-green);
-    border-radius: 20px;   
-}
+    border-radius: 20px;   }
 .logo span:hover{
     color: var(--color-green);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);}
+/*--------------------------------------navigation---------------------------------------*/
 .menu ul{
     display: flex;
     justify-content: center;
     list-style: none;  
-    gap: 15px;
-}
-
-a{
-    text-decoration: none;
+    gap: 15px;}
+.menu ul li a{  
     color: var(--color-white);
-    
-}
-
-.menu ul li a{
-    
-    color: var(--color-white);
-    transition: 1s;
-}
+    transition: 1s;}
 .menu ul li a:hover{
-    color: var(--color-green);
-}
-.contact a i{
+    color: var(--color-green);}
+/*-------------------------------------links contact-------------------------------------*/
+.nav-links a i{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-
-}
-.contact a i{
-    font-size:1.2rem ;
-    width: 2.5rem;
-    height: 2.5rem;
+    padding: 10px;}
+.nav-links a i{
+    font-size:1.1rem ;
+    width: 2rem;
+    height: 2rem;
     margin: 0;
     transition: .5s;
     border: 0.1rem solid var(--color-green);
-    border-radius: 50%;
-    
-}
-
-.contact a i:hover{
-    color: var(--color-green);
-}
-
-.home-page{
-    min-width: 400px;
-    width: 100%;
-    height: 80vh;
-    flex-wrap: wrap;
-    flex-direction: rows;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*.home-main{
-    max-width: 100%;
-    max-height: 30%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-}*/
-
-.left-division{ 
-    width: 30%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.contact{
+    border-radius: 50%;}
+.nav-links a i:hover{
+    color: var(--color-green);}
+.nav-links{
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
+    gap: 20px;}
+.nav-links a{
+    font-size: 1.7rem;}
 
-.contact a{
-    font-size: 1.7rem;
-}
+/*--------------------------------------------------------------Mobile Menu Responsive-------------------------------------------------------*/
+/* Estilos para o menu responsivo */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;}
+@media only screen and (max-width: 768px) {
+    /* Esconder o menu quando a largura da tela for menor ou igual a 768px */  
+    .menu {
+        display: none;}
+    .nav-links{
+    display: none;}
+    .nav-bar .logo a span{
+    font-size: 1rem;}
+    /* Mostrar o ícone do menu */
+    .mobile-menu-icon {
+        display: block; }
+    /* Estilos para o menu aberto */
+    .menu.open {
+        display: block;}}
 
-
-img[src]{
+/*-----------------------------------------------------------------Pagina Inicial-----------------------------------------------------------*/
+.home-page{
+    margin-top: 5rem;
     width: 100%;
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7rem;
+    gap: 3rem;
 }
+
+.imagem { 
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+img{
+width: 100%;}
+
 .right-division{
-    width: 30%;
-    height: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     text-align: start;
 }
+
+.right-division h2{
+color: var(--color-purple);}
 
 .cv{
     margin-top: 1rem;
@@ -186,36 +145,36 @@ img[src]{
     border-radius: .5rem;
 }
 
+/*-----------------------------------------------------------------Mobile Responsive Page One-----------------------------------------------------------*/
+@media only screen and (max-width: 780px){
+        .home-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        }
+        .right-division{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        }
 
+        .right-division h1{font-size: 1.5rem;}
+        .right-division h2{font-size: 1.1rem;}
+        .right-division p{font-size: .8rem;}
 
-/*--------------------------PAGINA 02 ----------------------------------------------------------------------------*/
-
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 50px;
+        .cv{padding: 7px 16px; font-size: .8rem;}
 }
 
-.content p{
-    max-width: 650px;
-    width: auto;
-    padding:0  50px;
 
-}
-
-h1{
-    text-align: center;
-    font-size: 2rem;
-    
-}
-
-.home-page2{
+/*---------------------------------------------------------------------------PAGINA 02 ----------------------------------------------------------------------------*/
+.page-tecnologias{
     width: 100%;
     margin-top: 7rem;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,43 +184,69 @@ h1{
     border-top-right-radius: 70px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
 }
-
-.home-main2{
-    width: 100%;
-    min-width: 600px;
+.tecnologias{
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     flex-direction: column;
+    padding: 50px;
 }
 
-.tec{
+.tecnologias p{
+    max-width: 650px;
+    width: auto;
+    padding:0  50px;
+
+}
+
+.tecnologias-icons{
     display: flex;
-    /*padding: 1rem;*/
+    padding: 1rem;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.tec img{
+.tecnologias-icons img{
     max-width: 5rem;
-    /*box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.35);
     border-radius: 1rem;
-    /*background-color: var(--color-white);*/
+    background-color: var(--color-white);
     transition: .5s;
 }
 
-.tec img:hover{
+.tecnologias-icons img:hover{
     transform: scale(1.1);
 }
+/*------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:900px) {
+    .tecnologias{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        }
+    
+        .tecnologias h2{
+        font-size: 1.1rem;}
+        .tecnologias p{
+        font-size: .8rem;}
+
+        .tecnologias-icons img{
+            display: flex;
+            align-items: center;
+            width: 1rem;}
+    
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
 
 .text-project{
     padding: 1rem;
 }
 
-.gallery {
+.gallery-projects {
     overflow-x: scroll;
     white-space: nowrap;
     padding: 2rem;
