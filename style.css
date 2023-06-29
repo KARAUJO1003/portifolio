@@ -259,8 +259,8 @@ color: var(--color-purple);}
     justify-content: center;
 }
   ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 1rem;
 }
 
