@@ -324,7 +324,7 @@ background-color: var(--color-purple-medium);
     justify-content: center;
     flex-direction: column;
     padding: 20rem;
-text-align: center;}
+    text-align: center;}
 /*----------------------------------------------------Seta para voltar ao topo---------------------------------------------------------------------------------------*/
 #back-to-top {
     position: fixed;
